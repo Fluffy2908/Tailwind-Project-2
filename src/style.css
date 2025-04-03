@@ -43,7 +43,7 @@
     }
 
     img {
-        @apply rounded-sm h-full object-cover;
+        @apply object-cover;
     }
 }
 

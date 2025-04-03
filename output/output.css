@@ -300,13 +300,6 @@
       margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .space-y-5 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
-    }
-  }
   .gap-x-1 {
     column-gap: calc(var(--spacing) * 1);
   }
@@ -349,12 +342,6 @@
   }
   .border-orange {
     border-color: var(--color-orange);
-  }
-  .border-primary-900 {
-    border-color: var(--color-primary-900);
-  }
-  .border-yellow {
-    border-color: var(--color-yellow);
   }
   .bg-blue {
     background-color: var(--color-blue);
@@ -400,9 +387,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-yellow {
-    background-color: var(--color-yellow);
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -476,12 +460,6 @@
   .text-yellow {
     color: var(--color-yellow);
   }
-  .text-yellow\/50 {
-    color: color-mix(in oklab, var(--color-yellow) 50%, transparent);
-  }
-  .text-yellow\/70 {
-    color: color-mix(in oklab, var(--color-yellow) 70%, transparent);
-  }
   .uppercase {
     text-transform: uppercase;
   }
@@ -494,12 +472,6 @@
   }
   .shadow-green {
     --tw-shadow-color: var(--color-green);
-  }
-  .shadow-orange {
-    --tw-shadow-color: var(--color-orange);
-  }
-  .shadow-yellow {
-    --tw-shadow-color: var(--color-yellow);
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -654,13 +626,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-orange);
-      }
-    }
-  }
-  .hover\:bg-yellow {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-yellow);
       }
     }
   }
@@ -865,11 +830,6 @@
       rotate: 0deg;
     }
   }
-  .md\:\[transform\:rotateY\(0\.5turn\)\] {
-    @media (width >= 48rem) {
-      transform: rotateY(0.5turn);
-    }
-  }
   .md\:\[transform\:rotateY\(180deg\)\] {
     @media (width >= 48rem) {
       transform: rotateY(180deg);
@@ -968,13 +928,6 @@
       }
     }
   }
-  .md\:\*\:gap-y-2 {
-    @media (width >= 48rem) {
-      :is(& > *) {
-        row-gap: calc(var(--spacing) * 2);
-      }
-    }
-  }
   .lg\:right-12 {
     @media (width >= 64rem) {
       right: calc(var(--spacing) * 12);
@@ -1070,17 +1023,6 @@
       display: none;
     }
   }
-  .dark\:self-center {
-    &:where(.dark, .dark *) {
-      align-self: center;
-    }
-  }
-  .dark\:border {
-    &:where(.dark, .dark *) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
-    }
-  }
   .dark\:border-2 {
     &:where(.dark, .dark *) {
       border-style: var(--tw-border-style);
@@ -1122,29 +1064,9 @@
       border-color: var(--color-primary-500);
     }
   }
-  .dark\:border-white {
-    &:where(.dark, .dark *) {
-      border-color: var(--color-white);
-    }
-  }
   .dark\:border-yellow {
     &:where(.dark, .dark *) {
       border-color: var(--color-yellow);
-    }
-  }
-  .dark\:border-yellow\/30 {
-    &:where(.dark, .dark *) {
-      border-color: color-mix(in oklab, var(--color-yellow) 30%, transparent);
-    }
-  }
-  .dark\:border-yellow\/50 {
-    &:where(.dark, .dark *) {
-      border-color: color-mix(in oklab, var(--color-yellow) 50%, transparent);
-    }
-  }
-  .dark\:border-yellow\/70 {
-    &:where(.dark, .dark *) {
-      border-color: color-mix(in oklab, var(--color-yellow) 70%, transparent);
     }
   }
   .dark\:bg-primary-500 {
@@ -1235,20 +1157,6 @@
       --tw-shadow-color: var(--color-yellow-300);
     }
   }
-  .dark\:shadow-yellow\/50 {
-    &:where(.dark, .dark *) {
-      --tw-shadow-color: color-mix(in oklab, var(--color-yellow) 50%, transparent);
-    }
-  }
-  .dark\:hover\:border-yellow {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          border-color: var(--color-yellow);
-        }
-      }
-    }
-  }
   .dark\:hover\:bg-yellow {
     &:where(.dark, .dark *) {
       &:hover {
@@ -1284,8 +1192,6 @@
     }
   }
   img {
-    height: 100%;
-    border-radius: var(--radius-sm);
     object-fit: cover;
   }
 }
